@@ -1,0 +1,25 @@
+{
+	"SublimeLinter":
+	{
+		"linters":
+		{
+			"gometalinter":
+			{
+				"args":
+				[
+					"--vendor",
+					"--exclude=*generated.go",
+					"--disable=gotype",
+					"--disable=vetshadow",
+					"--disable=gocyclo"
+				]
+			}
+		}
+	},
+	"folders":
+	[
+		{
+			"path": "/Users/hdezier/go/src/github.com/elojah/nats-streaming"
+		}
+	]
+}
