@@ -80,7 +80,7 @@ func (c *Config) Dial(fileconf interface{}) error {
 	if !ok {
 		return errors.New("missing key max_pub_acks_in_flight")
 	}
-	cMaxPubAcksInFlightFloat, ok = cMaxPubAcksInFlight.(float64)
+	cMaxPubAcksInFlightFloat, ok := cMaxPubAcksInFlight.(float64)
 	if !ok {
 		return errors.New("key max_pub_acks_in_flight invalid. must be int")
 	}
